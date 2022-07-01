@@ -13,5 +13,5 @@ export const Test = () => {
 
 const Text = styled.p({
 	fontSize: '24px',
-	color: `${palette.purple}`
+	color: `${palette.purple}`,
 })
