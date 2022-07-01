@@ -1,6 +1,8 @@
+import { Test } from './components/test';
+
 function App() {
   return (
-    <>べ〜</>
+    <Test />
   )
 }
 
