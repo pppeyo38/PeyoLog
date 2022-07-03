@@ -1,14 +1,10 @@
 import { ReactNode, FC } from "react"
 import styled from "styled-components"
 
+import { TextStyle } from '../../types/style'
+
 type Props = {
 	children: ReactNode;
-	fSize: string;
-	fWeight: string;
-	fColor: string;
-}
-
-type StyleProps = {
 	fSize: string;
 	fWeight: string;
 	fColor: string;
@@ -24,7 +20,7 @@ export const EnText: FC<Props> = (props) => {
 	)
 }
 
-const EnglishText = styled.p<StyleProps>`
+const EnglishText = styled.p<TextStyle>`
 	font-family: Be Vietnam Pro;
 	font-size: ${({fSize}) => fSize};
 	font-weight: ${({ fWeight }) => fWeight};

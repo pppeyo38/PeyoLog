@@ -2,33 +2,30 @@ import { ReactNode, FC } from "react"
 import styled from "styled-components"
 import { ColorTheme } from "../../style/ColorTheme"
 
+import { TextStyle } from '../../types/style'
+
 type Props = {
 	children: ReactNode;
-	fontSize: string;
-	fontWeight: string;
-}
-
-type StyleProps = {
-	fontSize: string;
-	fontWeight: string;
+	fSize: string;
+	fWeight: string;
 }
 
 const { palette } = ColorTheme
 
 export const Heading: FC<Props> = (props) => {
-	const { children, fontSize, fontWeight } = props;
+	const { children, fSize, fWeight } = props;
 
 	return (
-		<HeadingText fontSize={fontSize} fontWeight={fontWeight}>
+		<HeadingText fSize={fSize} fWeight={fWeight}>
 			{children}
 		</HeadingText>
 	)
 }
 
-const HeadingText = styled.p<StyleProps>`
-	font-size: ${({fontSize}) => fontSize};
+const HeadingText = styled.p<TextStyle>`
+	font-size: ${({fSize}) => fSize};
 	color: ${palette.purple};
 	font-family: Be Vietnam Pro;
-	font-weight: ${({ fontWeight }) => fontWeight};
+	font-weight: ${({ fWeight }) => fWeight};
 	font-style: Italic;
 `
