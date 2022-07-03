@@ -5,13 +5,15 @@ const { palette } = ColorTheme;
 
 export const Test = () => {
 	return (
-		<Text>
-			べ〜
-		</Text>
+		<>
+			<Text>
+				べ〜
+			</Text>
+		</>
 	)
 }
 
-const Text = styled.p({
-	fontSize: '24px',
-	color: `${palette.purple}`,
-})
+const Text = styled.p`
+	font-size: 24px;
+	color: ${palette.purple};
+`
