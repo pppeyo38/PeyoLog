@@ -1,9 +1,11 @@
-import { Test } from './components/test';
+import { Reset } from 'styled-reset'
+import { Test } from './components/test'
 
-function App() {
+export const App = () => {
   return (
-    <Test />
+    <>
+      <Reset />
+      <Test />
+    </>
   )
 }
-
-export default App
