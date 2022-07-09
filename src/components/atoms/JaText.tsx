@@ -10,7 +10,7 @@ type Props = {
 	fColor: string;
 }
 
-export const EnText: FC<Props> = (props) => {
+export const JaText: FC<Props> = (props) => {
 	const { children, fSize, fWeight, fColor } = props
 
 	return (
@@ -21,7 +21,7 @@ export const EnText: FC<Props> = (props) => {
 }
 
 const EnglishText = styled.p<TextStyle>`
-	font-family: 'Be Vietnam Pro';
+	font-family: 'Zen Kaku Gothic New', sans-serif;
 	font-size: ${({fSize}) => fSize};
 	font-weight: ${({ fWeight }) => fWeight};
 	color: ${({fColor}) => fColor};

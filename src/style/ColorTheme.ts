@@ -1,5 +1,3 @@
-import "styled-components"
-
 export const ColorTheme = {
   palette: {
     black: '#29282C',
