@@ -1,8 +1,9 @@
 import { memo } from "react"
 import styled from "styled-components"
-import { PageTitle } from "../molecules/PageTitle"
 
 import { SnapSection } from "../organisms/sections/SnapSection"
+import { PageTitle } from "../molecules/PageTitle"
+import { PageWork } from "../molecules/PageWork"
 
 export const ScrollSnap = memo(() => {
   return (
@@ -11,7 +12,7 @@ export const ScrollSnap = memo(() => {
         <PageTitle />
       </SnapSection>
       <SnapSection>
-        <PageTitle />
+        <PageWork />
       </SnapSection>
     </SnapArticle>
   )
