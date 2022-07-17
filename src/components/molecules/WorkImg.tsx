@@ -11,7 +11,7 @@ export const WorkImg = memo((props: ImgProps) => {
   return (
     <>
       <ImgWrap>
-        <img src={`./src/images/${imgName}`} />
+        <Img src={`./src/images/${imgName}`} />
       </ImgWrap>
     </>
   )
@@ -19,9 +19,10 @@ export const WorkImg = memo((props: ImgProps) => {
 
 const ImgWrap = styled.div`
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(237, 237, 239, 0.7);
+`;
+
+const Img = styled.img`
+  display: block;
+  width: 75%;
+  margin: 0 auto;
 `;

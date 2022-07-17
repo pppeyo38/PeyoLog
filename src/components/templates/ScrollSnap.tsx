@@ -12,7 +12,7 @@ export const ScrollSnap = memo(() => {
         <PageTitle />
       </SnapSection>
       <SnapSection>
-        <WorkImg imgName='work_vanity.png' />
+        <WorkImg imgName='work_vanity.jpg' />
       </SnapSection>
     </SnapArticle>
   )
