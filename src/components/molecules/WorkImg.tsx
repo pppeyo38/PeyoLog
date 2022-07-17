@@ -1,11 +1,17 @@
 import { memo } from "react"
 import styled from "styled-components"
 
-export const PageWork = memo(() => {
+type ImgProps = {
+  imgName: string
+}
+
+export const WorkImg = memo((props: ImgProps) => {
+  const { imgName } = props;
+
   return (
     <>
       <ImgWrap>
-        <img src="./src/images/work_vanity.png" />
+        <img src={`./src/images/${imgName}`} />
       </ImgWrap>
     </>
   )

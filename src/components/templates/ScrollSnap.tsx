@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import { SnapSection } from "../organisms/sections/SnapSection"
 import { PageTitle } from "../molecules/PageTitle"
-import { PageWork } from "../molecules/PageWork"
+import { WorkImg } from "../molecules/WorkImg"
 
 export const ScrollSnap = memo(() => {
   return (
@@ -12,7 +12,7 @@ export const ScrollSnap = memo(() => {
         <PageTitle />
       </SnapSection>
       <SnapSection>
-        <PageWork />
+        <WorkImg imgName='work_vanity.png' />
       </SnapSection>
     </SnapArticle>
   )
