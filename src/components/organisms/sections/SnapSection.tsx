@@ -1,11 +1,11 @@
-import { memo, FC, ReactNode } from "react"
+import { memo, ReactNode } from "react"
 import styled from "styled-components"
 
 type Props = {
   children: ReactNode;
 }
 
-export const SnapSection: FC<Props> = memo((props) => {
+export const SnapSection = memo((props: Props) => {
   const { children } = props
 
   return(

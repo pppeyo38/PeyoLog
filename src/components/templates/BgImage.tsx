@@ -1,11 +1,11 @@
-import { FC, memo, ReactNode } from "react"
+import { memo, ReactNode } from "react"
 import styled from "styled-components"
 
 type Props = {
   children: ReactNode;
 }
 
-export const BgImage :FC<Props> = memo((props) => {
+export const BgImage = memo((props: Props) => {
   const { children } = props
 
   return (

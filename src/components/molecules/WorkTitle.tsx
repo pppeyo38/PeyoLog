@@ -1,4 +1,4 @@
-import { FC, memo } from "react"
+import { memo } from "react"
 import styled from "styled-components"
 
 import { EnText } from "../atoms/EnText"
@@ -11,7 +11,7 @@ type WorkProps = {
   role: string;
 }
 
-export const WorkTitle :FC<WorkProps> = memo((props) => {
+export const WorkTitle = memo((props: WorkProps) => {
   const { category, title, period, role } = props
 
   return (

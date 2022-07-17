@@ -1,4 +1,4 @@
-import { ReactNode, FC } from "react"
+import { ReactNode } from "react"
 import styled from "styled-components"
 
 import { TextStyle } from '../../types/style'
@@ -10,7 +10,7 @@ type Props = {
 	fColor: string;
 }
 
-export const JaText: FC<Props> = (props) => {
+export const JaText = (props: Props) => {
 	const { children, fSize, fWeight, fColor } = props
 
 	return (

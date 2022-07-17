@@ -1,4 +1,4 @@
-import { ReactNode, FC } from "react"
+import { ReactNode } from "react"
 import styled from "styled-components"
 import { ColorTheme } from "../../style/ColorTheme"
 
@@ -12,7 +12,7 @@ type Props = {
 
 const { palette } = ColorTheme
 
-export const Heading: FC<Props> = (props) => {
+export const Heading = (props: Props) => {
 	const { children, fSize, fWeight } = props;
 
 	return (

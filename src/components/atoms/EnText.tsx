@@ -1,4 +1,4 @@
-import { ReactNode, FC } from "react"
+import { ReactNode } from "react"
 import styled from "styled-components"
 
 import { TextStyle } from '../../types/style'
@@ -11,7 +11,7 @@ type Props = {
 	fStyle?: string;
 }
 
-export const EnText: FC<Props> = (props) => {
+export const EnText = (props: Props) => {
 	const { children, fSize, fWeight, fColor, fStyle } = props
 
 	return (
